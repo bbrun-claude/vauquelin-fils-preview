@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ets Vauquelin Fils &mdash; Couverture, Charpente &agrave; Soings-en-Sologne (41)</title>
+    <meta name="description" content="Ets Vauquelin Fils &agrave; Soings-en-Sologne. Charpente, couverture, zinguerie, ramonage, d&eacute;moussage et panneaux solaires en Loir-et-Cher.">
+    <link rel="icon" type="image/jpeg" href="img/logo.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <meta property="og:title" content="Ets Vauquelin Fils &mdash; Soings-en-Sologne (41)">
+    <meta property="og:description" content="Charpente, couverture, zinguerie, ramonage, d&eacute;moussage et panneaux solaires.">
+    <meta property="og:type" content="website">
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+        :root {
+            --green: #1B6B3A;
+            --green-light: #238C4E;
+            --brown: #6B3A1B;
+            --dark: #1A1A2E;
+            --gray-700: #333;
+            --gray-600: #555;
+            --gray-200: #e0e0e0;
+            --gray-100: #f5f5f5;
+            --white: #fafafa;
+            --font-heading: 'Montserrat', sans-serif;
+            --font-body: 'Inter', sans-serif;
+        }
+
+        html { scroll-behavior: smooth; }
+        body { font-family: var(--font-body); color: var(--gray-700); background: var(--white); line-height: 1.6; -webkit-font-smoothing: antialiased; }
+
+        .nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: #fff; border-bottom: 3px solid var(--green); box-shadow: 0 2px 12px rgba(0,0,0,0.06); }
+        .nav-inner { max-width: 1100px; margin: 0 auto; padding: 0 24px; display: flex; align-items: center; justify-content: space-between; height: 68px; }
+        .nav-brand { display: flex; align-items: center; gap: 14px; text-decoration: none; }
+        .nav-logo { height: 52px; }
+        .nav-sep { width: 1px; height: 28px; background: var(--gray-200); }
+        .nav-name { font-family: var(--font-heading); font-weight: 700; font-size: 0.88rem; color: var(--dark); line-height: 1.2; }
+        .nav-links { display: flex; gap: 28px; list-style: none; }
+        .nav-links a { font-family: var(--font-heading); font-weight: 600; font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--gray-600); text-decoration: none; transition: color 0.2s; }
+        .nav-links a:hover { color: var(--green); }
+        .nav-burger { display: none; flex-direction: column; gap: 5px; cursor: pointer; background: none; border: none; padding: 8px; }
+        .nav-burger span { width: 26px; height: 3px; background: var(--dark); border-radius: 2px; }
+
+        .hero { position: relative; min-height: 88vh; display: flex; align-items: center; background: linear-gradient(135deg, var(--dark) 0%, #0D2818 60%, var(--green) 100%); overflow: hidden; }
+        .hero-accent { position: absolute; top: 0; right: 0; width: 50%; height: 100%; background: linear-gradient(135deg, var(--green) 0%, #0D2818 100%); clip-path: polygon(15% 0, 100% 0, 100% 100%, 0% 100%); }
+        .hero-content { position: relative; z-index: 2; max-width: 1100px; margin: 0 auto; padding: 120px 24px 80px; width: 100%; }
+        .hero-badge { display: inline-flex; align-items: center; gap: 10px; background: rgba(27,107,58,0.2); border: 1px solid rgba(27,107,58,0.4); border-radius: 30px; padding: 8px 20px; margin-bottom: 28px; }
+        .hero-badge svg { width: 20px; height: 20px; fill: #8BC34A; }
+        .hero-badge span { font-family: var(--font-heading); font-weight: 600; font-size: 0.78rem; color: #8BC34A; text-transform: uppercase; letter-spacing: 0.08em; }
+        .hero h1 { font-family: var(--font-heading); font-weight: 900; font-size: clamp(2.2rem, 5.5vw, 3.8rem); line-height: 1.05; color: #fff; margin-bottom: 24px; max-width: 600px; }
+        .hero h1 em { color: #fff; font-style: normal; background: var(--green); padding: 2px 12px; display: inline-block; margin-top: 8px; border-radius: 2px; }
+        .hero-sub { font-size: 1.05rem; color: rgba(255,255,255,0.7); max-width: 480px; margin-bottom: 40px; line-height: 1.7; }
+        .hero-ctas { display: flex; gap: 16px; flex-wrap: wrap; }
+        .hero-logo { position: absolute; right: 80px; top: 50%; transform: translateY(-50%); width: 280px; background: #fff; padding: 20px; border-radius: 12px; box-shadow: 0 20px 60px rgba(0,0,0,0.3); }
+        .hero-logo img { width: 100%; }
+
+        .btn { display: inline-flex; align-items: center; gap: 8px; font-family: var(--font-heading); font-weight: 700; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.04em; padding: 14px 32px; border-radius: 4px; text-decoration: none; transition: all 0.25s; border: none; cursor: pointer; }
+        .btn-green { background: var(--green); color: #fff; }
+        .btn-green:hover { background: var(--green-light); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(27,107,58,0.3); }
+        .btn-ghost { background: transparent; color: #fff; border: 2px solid rgba(255,255,255,0.3); }
+        .btn-ghost:hover { border-color: #fff; }
+
+        .stats-bar { background: var(--green); }
+        .stats-inner { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: repeat(4, 1fr); }
+        .stat { padding: 24px 20px; text-align: center; border-right: 1px solid rgba(255,255,255,0.15); }
+        .stat:last-child { border-right: none; }
+        .stat-num { font-family: var(--font-heading); font-weight: 900; font-size: 1.6rem; color: #fff; line-height: 1; }
+        .stat-label { font-family: var(--font-heading); font-weight: 600; font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.06em; color: rgba(255,255,255,0.7); margin-top: 4px; }
+
+        .section { padding: 80px 24px; max-width: 1100px; margin: 0 auto; }
+        .section-title { font-family: var(--font-heading); font-weight: 800; font-size: clamp(1.8rem, 4vw, 2.6rem); color: var(--dark); margin-bottom: 12px; line-height: 1.05; }
+        .section-subtitle { font-size: 0.95rem; color: var(--gray-600); max-width: 540px; margin-bottom: 48px; line-height: 1.7; }
+        .green-line { width: 50px; height: 4px; background: var(--green); margin-bottom: 16px; border-radius: 2px; }
+
+        .services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+        .srv { background: #fff; border: 1px solid var(--gray-200); padding: 28px 24px; border-radius: 8px; text-align: center; transition: all 0.3s; }
+        .srv:hover { border-color: var(--green); box-shadow: 0 8px 28px rgba(0,0,0,0.06); transform: translateY(-3px); }
+        .srv-icon { width: 56px; height: 56px; background: var(--green); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 16px; }
+        .srv-icon svg { width: 28px; height: 28px; fill: #fff; }
+        .srv h3 { font-family: var(--font-heading); font-weight: 700; font-size: 0.95rem; color: var(--dark); margin-bottom: 8px; }
+        .srv p { font-size: 0.85rem; color: var(--gray-600); line-height: 1.6; }
+
+        .engagement { background: var(--gray-100); }
+        .engagement-inner { max-width: 1100px; margin: 0 auto; padding: 80px 24px; }
+        .engagement-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 48px; }
+        .eng-card { background: #fff; border-radius: 8px; padding: 32px 24px; text-align: center; border: 1px solid var(--gray-200); }
+        .eng-card svg { width: 40px; height: 40px; fill: var(--green); margin-bottom: 16px; }
+        .eng-card h3 { font-family: var(--font-heading); font-weight: 700; font-size: 0.95rem; color: var(--dark); margin-bottom: 8px; }
+        .eng-card p { font-size: 0.85rem; color: var(--gray-600); line-height: 1.6; }
+
+        .contact-section { background: #fff; }
+        .contact-inner { max-width: 1100px; margin: 0 auto; padding: 80px 24px; }
+        .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 48px; }
+        .contact-card { background: var(--gray-100); border-radius: 8px; padding: 32px; border: 1px solid var(--gray-200); }
+        .contact-card h3 { font-family: var(--font-heading); font-weight: 700; font-size: 1.1rem; color: var(--dark); margin-bottom: 16px; }
+        .contact-item { display: flex; align-items: center; gap: 12px; padding: 10px 0; border-bottom: 1px solid #e8e8e8; }
+        .contact-item:last-child { border-bottom: none; }
+        .contact-item svg { width: 20px; height: 20px; fill: var(--green); flex-shrink: 0; }
+        .contact-item span { font-size: 0.92rem; color: var(--gray-700); }
+        .contact-item a { color: var(--dark); text-decoration: none; font-weight: 500; }
+        .contact-item a:hover { text-decoration: underline; color: var(--green); }
+        .hours-row { display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid #e8e8e8; font-size: 0.9rem; }
+        .hours-row:last-child { border-bottom: none; }
+        .hours-day { color: var(--gray-700); font-weight: 500; }
+        .hours-time { color: var(--gray-600); }
+
+        footer { background: var(--dark); padding: 40px 24px; text-align: center; }
+        .footer-inner { max-width: 1100px; margin: 0 auto; }
+        .footer-logo { height: 48px; margin-bottom: 16px; border-radius: 4px; background: #fff; padding: 4px; }
+        footer p { color: rgba(255,255,255,0.4); font-size: 0.82rem; }
+
+        @media (max-width: 768px) {
+            .nav-links { display: none; position: fixed; top: 68px; left: 0; right: 0; background: #fff; flex-direction: column; padding: 20px 24px; gap: 16px; border-top: 1px solid var(--gray-200); }
+            .nav-links.active { display: flex; }
+            .nav-burger { display: flex; }
+            .hero { min-height: 85vh; }
+            .hero h1 { font-size: clamp(2rem, 8vw, 3rem); }
+            .hero-accent { width: 100%; clip-path: polygon(0 60%, 100% 40%, 100% 100%, 0% 100%); opacity: 0.7; }
+            .hero-logo { display: none; }
+            .stats-inner { grid-template-columns: repeat(2, 1fr); }
+            .stat:nth-child(2) { border-right: none; }
+            .services-grid { grid-template-columns: 1fr; }
+            .engagement-grid { grid-template-columns: 1fr; }
+            .contact-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-inner">
+            <a href="#" class="nav-brand">
+                <img src="img/logo.jpg" alt="Ets Vauquelin Fils" class="nav-logo">
+                <span class="nav-sep"></span>
+                <span class="nav-name">Soings-en-Sologne (41)</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#services">Services</a></li>
+                <li><a href="#engagements">Engagements</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="nav-burger" onclick="document.getElementById('navLinks').classList.toggle('active')" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-accent"></div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <svg viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+                <span>Couverture &amp; Charpente</span>
+            </div>
+            <h1>Ets Vauquelin Fils<br><em>Soings-en-Sologne</em></h1>
+            <p class="hero-sub">Charpente, couverture, zinguerie, ramonage, d&eacute;moussage et panneaux solaires. Artisans de confiance en Loir-et-Cher.</p>
+            <div class="hero-ctas">
+                <a href="tel:+33254761655" class="btn btn-green">02 54 76 16 55</a>
+                <a href="#services" class="btn btn-ghost">Nos services</a>
+            </div>
+        </div>
+        <div class="hero-logo">
+            <img src="img/logo.jpg" alt="Ets Vauquelin Fils">
+        </div>
+    </section>
+
+    <div class="stats-bar">
+        <div class="stats-inner">
+            <div class="stat">
+                <div class="stat-num">6</div>
+                <div class="stat-label">Sp&eacute;cialit&eacute;s</div>
+            </div>
+            <div class="stat">
+                <div class="stat-num">Sologne</div>
+                <div class="stat-label">Zone d'intervention</div>
+            </div>
+            <div class="stat">
+                <div class="stat-num">Famille</div>
+                <div class="stat-label">Entreprise familiale</div>
+            </div>
+            <div class="stat">
+                <div class="stat-num">100%</div>
+                <div class="stat-label">Devis gratuit</div>
+            </div>
+        </div>
+    </div>
+
+    <section class="section" id="services">
+        <div class="green-line"></div>
+        <h2 class="section-title">Nos savoir-faire</h2>
+        <p class="section-subtitle">Un service complet pour votre toiture, de la charpente &agrave; l'&eacute;nergie solaire, par des artisans exp&eacute;riment&eacute;s.</p>
+        <div class="services-grid">
+            <div class="srv">
+                <div class="srv-icon">
+                    <svg viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+                </div>
+                <h3>Charpente</h3>
+                <p>Cr&eacute;ation, r&eacute;novation et traitement de charpentes traditionnelles et industrielles. Bois massif et lamell&eacute;-coll&eacute;.</p>
+            </div>
+            <div class="srv">
+                <div class="srv-icon">
+                    <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14z"/></svg>
+                </div>
+                <h3>Couverture</h3>
+                <p>Pose et r&eacute;fection de toiture en tuiles, ardoises ou zinc. &Eacute;tanch&eacute;it&eacute; et isolation par l'ext&eacute;rieur (sarking).</p>
+            </div>
+            <div class="srv">
+                <div class="srv-icon">
+                    <svg viewBox="0 0 24 24"><path d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.4 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4z"/></svg>
+                </div>
+                <h3>Zinguerie</h3>
+                <p>Goutti&egrave;res, descentes, ch&eacute;neaux et habillages en zinc, cuivre ou aluminium. Pose et remplacement.</p>
+            </div>
+            <div class="srv">
+                <div class="srv-icon">
+                    <svg viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0-6c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2zm6.39 8.56C16.71 13.7 14.53 13 12 13s-4.71.7-6.39 1.56A2.97 2.97 0 004 17.22V20h16v-2.78c0-1.12-.61-2.15-1.61-2.66z"/></svg>
+                </div>
+                <h3>Ramonage</h3>
+                <p>Ramonage de chemin&eacute;es, conduits de fum&eacute;e et po&ecirc;les. Certificat de ramonage conforme &agrave; la r&eacute;glementation.</p>
+            </div>
+            <div class="srv">
+                <div class="srv-icon">
+                    <svg viewBox="0 0 24 24"><path d="M17.66 8L12 2.35 6.34 8A8.02 8.02 0 004 13.64c0 2 .78 4.11 2.34 5.67a7.99 7.99 0 0011.32 0c1.56-1.56 2.34-3.67 2.34-5.67S19.22 9.56 17.66 8zM6 14c.01-2 .62-3.27 1.76-4.4L12 5.27l4.24 4.38C17.38 10.77 17.99 12 18 14H6z"/></svg>
+                </div>
+                <h3>D&eacute;moussage</h3>
+                <p>Nettoyage et traitement anti-mousse de toiture. Prolongez la dur&eacute;e de vie de votre couverture.</p>
+            </div>
+            <div class="srv">
+                <div class="srv-icon">
+                    <svg viewBox="0 0 24 24"><path d="M20 15.31L23.31 12 20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69zM12 18c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6z"/></svg>
+                </div>
+                <h3>Panneaux solaires</h3>
+                <p>Installation de panneaux photovolta&iuml;ques. Produisez votre &eacute;lectricit&eacute; et r&eacute;duisez votre facture &eacute;nerg&eacute;tique.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="engagement" id="engagements">
+        <div class="engagement-inner">
+            <div class="green-line"></div>
+            <h2 class="section-title">Pourquoi nous choisir</h2>
+            <p class="section-subtitle">Des artisans de proximit&eacute;, au service de votre habitat depuis des ann&eacute;es.</p>
+            <div class="engagement-grid">
+                <div class="eng-card">
+                    <svg viewBox="0 0 24 24"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
+                    <h3>Entreprise familiale</h3>
+                    <p>Un savoir-faire transmis de g&eacute;n&eacute;ration en g&eacute;n&eacute;ration. Vous &ecirc;tes accompagn&eacute; par des artisans passionn&eacute;s.</p>
+                </div>
+                <div class="eng-card">
+                    <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                    <h3>Proximit&eacute;</h3>
+                    <p>Install&eacute;s &agrave; Soings-en-Sologne, nous intervenons dans tout le Loir-et-Cher et les d&eacute;partements limitrophes.</p>
+                </div>
+                <div class="eng-card">
+                    <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-1 10h-4v4h-4v-4H6v-4h4V5h4v4h4v4z"/></svg>
+                    <h3>Service complet</h3>
+                    <p>De la charpente au solaire, un seul interlocuteur pour tous vos travaux de toiture. Devis gratuit et sans engagement.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+        <div class="contact-inner">
+            <div class="green-line"></div>
+            <h2 class="section-title">Contactez-nous</h2>
+            <p class="section-subtitle">Pour un devis gratuit ou un conseil, appelez-nous. Nous intervenons sur Soings-en-Sologne et tout le Loir-et-Cher.</p>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <h3>Coordonn&eacute;es</h3>
+                    <div class="contact-item">
+                        <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                        <span>41230 Soings-en-Sologne, Loir-et-Cher</span>
+                    </div>
+                    <div class="contact-item">
+                        <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                        <a href="tel:+33254761655">02 54 76 16 55</a>
+                    </div>
+                    <div class="contact-item">
+                        <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                        <a href="mailto:daniel.vauquelin@orange.fr">daniel.vauquelin@orange.fr</a>
+                    </div>
+                </div>
+                <div class="contact-card">
+                    <h3>Horaires</h3>
+                    <div class="hours-row"><span class="hours-day">Lundi &ndash; Vendredi</span><span class="hours-time">8h &ndash; 18h</span></div>
+                    <div class="hours-row"><span class="hours-day">Samedi</span><span class="hours-time">Sur rendez-vous</span></div>
+                    <div class="hours-row"><span class="hours-day">Dimanche</span><span class="hours-time">Ferm&eacute;</span></div>
+                    <p style="margin-top: 16px; font-size: 0.85rem; color: var(--gray-600); line-height: 1.6;">Devis gratuit et sans engagement. Nous nous d&eacute;pla&ccedil;ons pour &eacute;valuer vos travaux sur place.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-inner">
+            <img src="img/logo.jpg" alt="Ets Vauquelin Fils" class="footer-logo">
+            <p>Ets Vauquelin Fils &mdash; Couverture, Charpente, Zinguerie &mdash; &copy; 2026</p>
+            <p style="margin-top:6px;">41230 Soings-en-Sologne &mdash; 02 54 76 16 55</p>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.nav-links a').forEach(function(a) {
+            a.addEventListener('click', function() {
+                document.getElementById('navLinks').classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>
